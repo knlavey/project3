@@ -1,11 +1,9 @@
-@import url (font-face.css);
 body { 
 	background-color: #fff;
 	display: inline-block;
 	text-align: center;
 	width: 100%;
-	font-family:'lato-regular';
-  	src: url('../fonts/lato-regular/Lato-reg-webfont.ttf')  format('truetype');
+	font-family: 'Open Sans', sans-serif;
 	font-size: 90%;
 	margin: 0px;
 	padding: auto;}
@@ -21,7 +19,7 @@ body {
 .headcontainer {
 	width: 960px;
 	display: inline-block;
-	bottom-border: 2px solid #d25915 100%;
+	bottom-border: 5px solid #d25915 100%;
 }
 
 .spicelogo {
@@ -101,6 +99,84 @@ button {
 	font-color: #a53e4d;
 }
 
+.testimonials {
+	width: 960px;
+	display: inline-block;
+}
+.quotes {
+	width: 900px;
+	text-align: center;
+	padding: 10px;
+	display: inline-block;
+}
+.quote1, .quote2, .quote3, .quote4 {
+	width: 400px;
+	float: left;
+	display: inline-block;
+}
+.openquote {
+  font: 18px/30px normal Tahoma, sans-serif;
+  padding-top: 22px;
+  margin: 5px;
+  text-indent: 20px;
+  }
+
+.form {
+	width: 960px;
+	padding: 10px;
+	display: inline-block;
+}
+.contactus {
+	width: 380px;
+	display: inline-block;
+	float: left;
+	text-align: left;
+}
+.formheader {
+	font-family: ;
+	color: #af2f2c;
+
+}
+label {
+	padding: 10px;
+	display: block;
+}
+.radio {
+	display: inline-block;
+}
+.checkbox {
+	width: 440px;
+	display: block;
+	float: left;
+	padding: 10px;
+}
+.message {
+	color: #af2f2c;
+}
+.comment {
+	width: 420px;
+	display: block;
+	text-align: left;
+}
+
+.submit {
+	width: 110px;
+	padding: 2px;
+    font: 16px;
+    text-decoration: none;
+	color: #af2f2c;
+	cursor: pointer;
+	border: .5px solid #ccc;
+	border-radius: 10px;
+    border: 1px solid #ccc;
+    border-color: #ccc;
+    background: #c0c0c0;
+  	background-image:-moz-linear-gradient(rgb(227,227,227),rgb(160,160,160));
+  	background-image: -ms-linear-gradient(rgb(227,227,227),rgb(160,160,160));
+  	background-image: -webkit-linear-gradient(rgb(227,227,227),rgb(160,160,160));
+  	background-image: linear-gradient(rgb(227,227,227),rgb(160,160,160));
+}
+
 .footercontainer {
 	width: 100%;
 	background-color: #d25915;
@@ -135,8 +211,7 @@ button {
 .copy {
 	float: left;
 	padding: 10px;
-	margin-top: 10px;
+	margin-top: 20px;
 	color: white;
 }
 
-770 570 8126 

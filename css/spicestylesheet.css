@@ -6,20 +6,21 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 90%;
 	margin: 0px;
-	padding: auto;}
+	padding: auto;
+}
 
 .header {
 	width: 100%;
 	display: inline-block;
+	border-bottom: 5px solid #d25915;
 	background-image:
 	-webkit-gradient(linear, left top, left bottom, from(#af302c), to(#ed6323));
-	background: 
+	background-image: 
 	-moz-linear-gradient(top, #af302c, #ed6323);
 }
 .headcontainer {
 	width: 960px;
 	display: inline-block;
-	bottom-border: 5px solid #d25915 100%;
 }
 
 .spicelogo {
@@ -55,10 +56,14 @@ button {
 	cursor: pointer;
 	border: .5px solid #a14310;
 	border-radius: 10px;
-    border: 1px solid #a14310;
+    border: 1.5px solid #a14310;
     border-color: #a14310;
 }
-.spice a:link {
+.buttonnewsblog  {
+	width: 140px;
+}
+
+.spice a {
 	font-family: sans-serif;
 	color: green;
 	text-decoration: none;}
@@ -72,31 +77,39 @@ button {
 	text-decoration: none;}
 
 .workcontainer {
-	width: 100%;
+	width: 960px;
 	display: inline-block;
 	bottom-border: 2px solid #d25915;
 }
 .work {
 	width: 960px;
-	display: inline-block;
+	float: left;
+	clear: both;
 	background-color: #fff;
-	padding-left: 10px;
+	padding-left: 40px;
 	padding-right: 10px;
 	padding-top: 20px;
 	padding-bottom: 10px;
 	text-align: center;
 }
+
 .logos, .branding, .packaging, .print, .web, .other {
 	width: 240px;
 	float: left;
-	vertical-align
 	display: block;
 	padding-right: 20px;
+	padding-left: 60px;
 }
-.h2 {
+
+figcaption, h2 {
 	font-style: italic;
 	font-size: 20px;
-	font-color: #a53e4d;
+	color: #a53e4d;
+	text-align: center;
+	padding-left: 10px;
+}
+figure {
+	padding: 20px;
 }
 
 .testimonials {
@@ -119,23 +132,25 @@ button {
   padding-top: 22px;
   margin: 5px;
   text-indent: 20px;
-  }
+ }
 
 .form {
 	width: 960px;
-	padding: 10px;
+	padding-top: 10;
+	padding-left: 20px;
 	display: inline-block;
 }
 .contactus {
-	width: 380px;
+	width: 600px;
 	display: inline-block;
 	float: left;
 	text-align: left;
+	padding-left: 100px;
+	padding-bottom: 10px;
 }
 .formheader {
-	font-family: ;
+	font-family: 'Open Sans', sans-serif;
 	color: #af2f2c;
-
 }
 label {
 	padding: 10px;
@@ -145,24 +160,59 @@ label {
 	display: inline-block;
 }
 .checkbox {
-	width: 440px;
+	width: 600px;
 	display: block;
 	float: left;
-	padding: 10px;
+	clear: both;
+	padding-left: 200px;
+	padding-bottom: 10px;
 }
+.title {
+	display: inline-block;
+	float: left;
+	clear: both;
+}
+.checkbox ul {
+	list-style-type: none;
+  	display: inline-block;
+  	float: left;
+ 	clear: both;
+  	margin: 0 auto;
+  	padding: 10px;
+}
+.checkbox li {
+	display: inline;
+	margin: 0 auto;
+	padding: 6px;
+}
+
 .message {
 	color: #af2f2c;
+	float: left;
+	padding: 10px;
+	clear: both;
 }
-.comment {
+textarea {
 	width: 420px;
 	display: block;
 	text-align: left;
+	float: left;
+	clear: both;
 }
-
+.required {
+	float: left;
+	clear: both;
+	display: inline-block;
+}
+em {
+	color: #af2f2c;
+}
 .submit {
-	width: 110px;
-	padding: 2px;
-    font: 16px;
+	width: 150px;
+	word-spacing: 2px;
+	float: right;
+	clear: both;
+    font: 18px;
     text-decoration: none;
 	color: #af2f2c;
 	cursor: pointer;
@@ -177,10 +227,68 @@ label {
   	background-image: linear-gradient(rgb(227,227,227),rgb(160,160,160));
 }
 
+.blog {
+	width: 960px;
+	background-color: #fff;
+	display: inline-block;
+}
+
+.cols {
+	width: 960px;
+	float: left;
+	clear: both;
+}
+.cols ul {
+	display: inline-block;
+	list-style-type: none;
+	padding: 20px;
+	
+}
+.cols li {
+	display: inline-block;
+	list-style-image: none;
+	text-decoration: none;
+	width: 260px;
+	float: left;
+	padding: 30px;
+}
+.cols li img {
+	border: 3px solid #a14310;
+	border-radius: 280px;
+	background-color: #ececec;
+	padding: 10px;
+	margin: 10px;
+}
+.readmore {
+	width: 120px;
+	background-color: #af302c;
+}
+
+.cols h4 {
+	width: 260px;
+	color: #f69668;
+	font-size: 18px;
+	text-align: left;
+}
+.cols p {
+	width: 260px;
+	text-align: left;
+	font-size: 14px;
+	font-family: 'Open Sans;' sans-serif;
+	word-spacing: 4px;
+	padding-top: 10px;
+	padding-right: 40px;
+}
+.p2, .p3 {
+	padding-right: 60px;
+	text-justify: inter-word;
+
+}
+
 .footercontainer {
 	width: 100%;
 	background-color: #d25915;
-	border-top: 2px solid #eb8157 100%;
+	border-top: 5px solid #eb8157;
 }
 .footer {
 	width: 960px;
@@ -194,19 +302,18 @@ label {
 .social {
 	display: inline-block;
 	float: right;
+	clear: both;
 }
 .social ul {
 	display: inline-block;
 	list-style-type: none;
-	float: right;
 }
 .social li {
 	display: inline-block;
 	list-style-image: none;
 	text-decoration: none;
 	margin: 0 auto;
-	float: right;
-	padding: 10px;
+	padding: 6px;
 }
 .copy {
 	float: left;
@@ -214,4 +321,6 @@ label {
 	margin-top: 20px;
 	color: white;
 }
+
+
 

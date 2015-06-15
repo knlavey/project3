@@ -1,11 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 body { 
 	background-color: #fff;
 	display: inline-block;
 	text-align: center;
 	width: 100%;
+	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 90%;
-	margin: 0px;
+	margin: 0 auto;
 	padding: auto;
 }
 
@@ -29,52 +32,52 @@ body {
 	margin: 20px;
 	padding: 10px;
 }
-.spice {
+.spicenav {
 	float: right;
 	display: inline-block;
 	list-style-type: none;
 	padding-top: 100px;
 	margin: 10px;
 }
-.spice ul {
+.spicenav ul {
 	display: inline-block;
 	list-style-type: none;
 	word-spacing: 10px;
 }
-.spice li {
+.spicenav li {
 	list-style-type: none;
 	display: inline-block; 
 	text-decoration: none;
+	padding: 10px;
 }
-button {
-	width: 104px;
-	padding: 2px;
+
+.spicenav a {
+	font-family: sans-serif;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	text-shadow: 1px 1px 1px #000;
+
+}
+.spicenav a:visited {
+	color: #fff;
+}
+.spicenav a:active {
+	color: #fff;
+	padding-bottom: 2px;
+}
+.spicenav a:hover {
+	text-decoration: none;
+	border: 2px solid #a14310;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #fff;
+	padding: 10px;
     font: 16px;
     text-decoration: none;
     background: #d25915;
 	color: #fff;
 	cursor: pointer;
-	border: .5px solid #a14310;
-	border-radius: 10px;
-    border: 1.5px solid #a14310;
-    border-color: #a14310;
 }
-.buttonnewsblog  {
-	width: 140px;
-}
-
-.spice a {
-	font-family: sans-serif;
-	color: green;
-	text-decoration: none;}
-.spice a:visited {
-	color: #fff;}
-.spice a:active {
-	color: #fff;
-	padding-bottom: 2px;}
-.spice a:hover {
-	color: green;
-	text-decoration: none;}
 
 .workcontainer {
 	width: 960px;
@@ -94,7 +97,7 @@ button {
 }
 
 .logos, .branding, .packaging, .print, .web, .other {
-	width: 240px;
+	width: 260px;
 	float: left;
 	display: block;
 	padding-right: 20px;
@@ -117,21 +120,35 @@ figure {
 	display: inline-block;
 }
 .quotes {
-	width: 900px;
+	width: 960px;
 	text-align: center;
-	padding: 10px;
+	padding: 40px;
 	display: inline-block;
 }
 .quote1, .quote2, .quote3, .quote4 {
-	width: 400px;
+	width: 420px;
 	float: left;
 	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
 }
+
 .openquote {
-  font: 18px/30px normal Tahoma, sans-serif;
-  padding-top: 22px;
-  margin: 5px;
-  text-indent: 20px;
+  	font: 18px/30px;
+  	padding-top: 22px;
+  	margin: 5px;
+  	text-indent: 20px;
+ }
+ .quoteimg1 {
+ 	position: relative;
+ }
+ .quoteimg2 {
+ 	position: relative;
+  	bottom: 75px;
+  	left: 38px;
+  	float: right;
+  	clear: both;
  }
 
 .form {
@@ -230,6 +247,7 @@ em {
 .blog {
 	width: 960px;
 	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
 	display: inline-block;
 }
 
@@ -248,20 +266,54 @@ em {
 	display: inline-block;
 	list-style-image: none;
 	text-decoration: none;
-	width: 260px;
+	width: 300px;
 	float: left;
 	padding: 30px;
 }
 .cols li img {
-	border: 3px solid #a14310;
-	border-radius: 280px;
+	border: 4px solid #a14310;
+	border-radius: 300px;
 	background-color: #ececec;
 	padding: 10px;
 	margin: 10px;
 }
+
+button {
+	width: 100px;
+	padding: 2px;
+    font: 14px;
+    text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	border: .5px solid #a14310;
+	border-radius: 10px;
+    border: 1.5px solid #a14310;
+    border-color: #a14310;
+}
+
 .readmore {
-	width: 120px;
+	width: 100px;
 	background-color: #af302c;
+	position: relative;
+	bottom: 124px;
+  	right: 64px;
+}
+.readmore2 {
+	width: 100px;
+	background-color: #af302c;
+	position: relative;
+	bottom: 50px;
+  	right: 50px;
+}
+.readmore3 {
+	width: 100px;
+	background-color: #af302c;
+	position: relative;
+	bottom: 148px;
+  	right: -50px;
+}
+.readmore:hover, .readmore2:hover, .readmore3:hover {
+	visibility: hidden;
 }
 
 .cols h4 {
@@ -270,21 +322,17 @@ em {
 	font-size: 18px;
 	text-align: left;
 }
-.cols p {
+.p1, .p2, .p3 {
 	width: 260px;
-	text-align: left;
 	font-size: 14px;
-	font-family: 'Open Sans;' sans-serif;
-	word-spacing: 4px;
+	word-spacing: 6px;
 	padding-top: 10px;
 	padding-right: 40px;
+	text-align: left;
 }
 .p2, .p3 {
-	padding-right: 60px;
-	text-justify: inter-word;
-
+	padding-right: 40px;
 }
-
 .footercontainer {
 	width: 100%;
 	background-color: #d25915;
@@ -292,6 +340,7 @@ em {
 }
 .footer {
 	width: 960px;
+	height: 96px;
 	background-color: #d25915;
 	padding: 10px;
 	margin: 0 auto;
